@@ -13,7 +13,6 @@
 % CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
 %
 
-
 %-------------------------------------------------------------------------------
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
@@ -44,13 +43,12 @@
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
-
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
-\photo{./examples/profile-wb.png}
+\photo[rectangle, noedge]{./examples/profile-wb.png}
 \name{Bajer}{Wojciech}
 \position{Dev-Ops Engineer{\enskip\cdotp\enskip}QA Engineer}
 \address{Pawła Włodkowica 5, Wrocław, Poland}
@@ -76,7 +74,6 @@
 
 \quote{"The only thing that is doing the thing is doing the thing."}
 
-
 %-------------------------------------------------------------------------------
 \begin{document}
 
@@ -87,10 +84,9 @@
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 \makecvfooter
-  {\today}
-  {Wojciech Bajer~~~·~~~Curriculum Vitae}
-  {\thepage}
-
+{\today}
+{Wojciech Bajer~~~·~~~Curriculum Vitae}
+{\thepage}
 
 %-------------------------------------------------------------------------------
 %	CV/RESUME CONTENT
@@ -105,7 +101,6 @@
 \input{cv/presentation.tex}
 % \input{cv/writing.tex}
 % \input{cv/committees.tex}
-
 
 %-------------------------------------------------------------------------------
 \end{document}
