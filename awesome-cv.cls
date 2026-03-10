@@ -81,30 +81,13 @@
 \defaultfontfeatures{
   Renderer=HarfBuzz,
 }
-\setmainfont{Source Sans 3}[
-  UprightFont=*,
-  ItalicFont=* Italic,
-  BoldFont=* Bold,
-  BoldItalicFont=* Bold Italic,
-  FontFace={l}{n}{Font=* Light},
-  FontFace={l}{it}{Font=* Light Italic},
-]
-\setsansfont{Source Sans 3}[
-  UprightFont=*,
-  ItalicFont=* Italic,
-  BoldFont=* Bold,
-  BoldItalicFont=* Bold Italic,
-  FontFace={l}{n}{Font=* Light},
-  FontFace={l}{it}{Font=* Light Italic},
-]
-\newfontfamily\roboto{Roboto}[
-  UprightFont=*,
-  ItalicFont=* Italic,
-  BoldFont=* Bold,
-  BoldItalicFont=* Bold Italic,
-  FontFace={l}{n}{Font=* Light},
-  FontFace={l}{it}{Font=* Light Italic},
-]
+\newcommand*{\acvbodyfontname}{Source Sans 3}
+\IfFontExistsTF{Source Sans 3}{}{\renewcommand*{\acvbodyfontname}{TeX Gyre Heros}}
+\setmainfont{\acvbodyfontname}
+\setsansfont{\acvbodyfontname}
+\newcommand*{\acvheaderfontname}{Roboto}
+\IfFontExistsTF{Roboto}{}{\renewcommand*{\acvheaderfontname}{TeX Gyre Heros}}
+\newfontfamily\roboto{\acvheaderfontname}
 % Needed for the photo ID
 \RequirePackage[skins]{tcolorbox}
 % Needed to deal a paragraphs
@@ -185,10 +168,10 @@
 %                Configuration for fonts
 %-------------------------------------------------------------------------------
 \newcommand*{\headerfont}{\roboto\selectfont}
-\newcommand*{\headerfontlight}{\roboto\fontseries{l}\selectfont}
+\newcommand*{\headerfontlight}{\roboto\selectfont}
 \newcommand*{\footerfont}{\sffamily}
 \newcommand*{\bodyfont}{\sffamily}
-\newcommand*{\bodyfontlight}{\sffamily\fontseries{l}\selectfont}
+\newcommand*{\bodyfontlight}{\sffamily\selectfont}
 
 %-------------------------------------------------------------------------------
 %                Configuration for styles
