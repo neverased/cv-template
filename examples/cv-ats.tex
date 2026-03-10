@@ -1,0 +1,182 @@
+%!TEX TS-program = lualatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[a4paper,margin=1.4cm]{geometry}
+\usepackage{enumitem}
+\usepackage{fontspec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+
+\setmainfont{TeX Gyre Heros}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.25em}
+\pagestyle{empty}
+\urlstyle{same}
+
+\definecolor{accent}{HTML}{1F2937}
+\definecolor{textgray}{HTML}{4B5563}
+
+\setlist[itemize]{leftmargin=1.4em, topsep=0.2em, itemsep=0.2em, parsep=0pt, partopsep=0pt}
+
+\newcommand{\cvsection}[1]{%
+  \vspace{0.7em}%
+  {\large\bfseries\color{accent} #1}\par
+  \vspace{0.15em}%
+  \hrule
+  \vspace{0.35em}%
+}
+
+\newcommand{\contactline}[1]{{\footnotesize\color{textgray} #1}\par}
+
+\newcommand{\experienceentry}[5]{%
+  {\normalsize\bfseries #1}\par
+  {\normalsize #2}\par
+  {\footnotesize\color{textgray} #3 | #4}\par
+  \begin{itemize}
+  #5
+  \end{itemize}
+}
+
+\begin{document}
+
+% Tailor this line to the target job title before applying.
+{\LARGE\bfseries Wojciech Bajer}\par
+{\large QA Automation Engineer | QA Lead | DevOps Engineer}\par
+
+\contactline{Wroclaw, Poland | \href{mailto:mail@wojciechbajer.com}{mail@wojciechbajer.com} | \href{https://www.wojciechbajer.com}{wojciechbajer.com}}
+\contactline{\href{https://github.com/neverased}{github.com/neverased} | \href{https://www.linkedin.com/in/wojciech-bajer}{linkedin.com/in/wojciech-bajer} | +48 694 913 653}
+
+\cvsection{Professional Summary}
+QA Automation Engineer and DevOps Engineer with experience building end-to-end test automation, CI/CD pipelines, observability workflows, and cloud-based delivery platforms across automotive, consumer electronics, SaaS, and hardware-integrated products. Hands-on with Playwright, Selenium, Pytest, Python, TypeScript, JavaScript, GitHub Actions, Azure DevOps, Docker, Kubernetes, AWS, Azure, Grafana, Datadog, and ReportPortal. Experience leading QA strategy, test architecture, release quality, cross-functional collaboration, and AI-assisted internal tooling.
+
+\cvsection{Core Skills}
+\textbf{Testing and Quality Engineering:} Test strategy, test planning, test architecture, end-to-end testing, regression testing, manual testing, Hardware-in-the-Loop (HIL) testing, QA leadership, ReportPortal, TestRail\par
+\textbf{Automation and Programming:} Playwright, Selenium, Pytest, Python, TypeScript, JavaScript, Node.js, Express, NestJS, REST APIs, WebSockets\par
+\textbf{Cloud, CI/CD, and Platform:} GitHub Actions, Azure DevOps, CircleCI, Jenkins, Docker, Kubernetes, AWS, Azure, Ansible\par
+\textbf{Observability and Reporting:} Grafana, Datadog, dashboards, monitoring, release visibility\par
+\textbf{AI Tooling:} LLM agents, retrieval-augmented generation (RAG), GitHub Copilot, Codex, Claude Code\par
+\textbf{Languages:} Polish, English
+
+\cvsection{Professional Experience}
+\experienceentry
+  {Co-founder and CTO}
+  {Lexense (lexense.ai)}
+  {Poland}
+  {Jan 2026 - Present}
+  {
+    \item Co-founded an AI legal assistant startup focused on legal document analysis, contract risk detection, and document-based question answering.
+    \item Lead the company as CTO while continuing concurrent roles in QA leadership and consulting.
+  }
+
+\experienceentry
+  {Quality Assurance Team Lead}
+  {Efectivo, Humanit Group}
+  {Wroclaw, Poland}
+  {Feb 2025 - Present}
+  {
+    \item Led QA strategy and test architecture for the ecosystem test team supporting product and ecosystem releases.
+    \item Implemented observability and reporting workflows with Grafana, Datadog, ReportPortal, and internal tooling.
+    \item Maintained and improved CI/CD pipelines used by product and ecosystem teams.
+    \item Supported product and sales teams with QA planning, automation activities, and release readiness.
+    \item Designed AI-powered agents and LLM + RAG documentation workflows to automate testing tasks and internal knowledge access.
+  }
+
+\experienceentry
+  {QA and Automation Specialist}
+  {Efectivo, Humanit Group}
+  {Wroclaw, Poland}
+  {May 2024 - Feb 2025}
+  {
+    \item Built end-to-end test automation for product and ecosystem workflows from scratch.
+    \item Created verification scripts for Hardware-in-the-Loop (HIL) testing.
+    \item Worked with frontend, backend, mobile, and hardware engineers to define QA best practices and automation strategy.
+    \item Contributed across QA, DevOps, and cloud-related engineering tasks.
+  }
+
+\experienceentry
+  {DevOps Engineer (Consultant via HiQ)}
+  {Polestar}
+  {Gothenburg, Sweden}
+  {Feb 2023 - Mar 2024}
+  {
+    \item Built and maintained CI/CD infrastructure based on Azure DevOps and GitHub.
+    \item Standardized software delivery practices, containerization, and Kubernetes-based deployment workflows.
+    \item Supported development teams in adopting DevOps processes and release automation.
+    \item Built a Grafana-based logging and release visibility platform that aggregated progress across services.
+  }
+
+\experienceentry
+  {DevOps Engineer (Consultant via HiQ)}
+  {Volvo Cars}
+  {Gothenburg, Sweden}
+  {Jan 2022 - Jan 2023}
+  {
+    \item Improved CI/CD workflows and development processes to streamline integration and delivery.
+    \item Supported engineering teams with automation and tooling changes that simplified release procedures.
+  }
+
+\experienceentry
+  {QA Engineer / QA Lead - Consumer Entertainment Technology}
+  {Dolby Laboratories}
+  {Wroclaw, Poland}
+  {Jan 2021 - Dec 2021}
+  {
+    \item Led interoperability and ecosystem health testing across software and hardware workflows.
+    \item Built and maintained CI/CD and QA processes, including test design, test planning, test architecture, and test metrics.
+    \item Delivered certification tools for external customers, including a web application and an Electron application.
+    \item Built a web dashboard that consolidated qTest, Excel, and Confluence data for non-technical stakeholders.
+    \item Supported Dolby Atmos and Dolby Vision pilot programs with broadcasters and streaming services.
+  }
+
+\experienceentry
+  {Associate QA Engineer - Consumer Entertainment Technology}
+  {Dolby Laboratories}
+  {Wroclaw, Poland}
+  {Oct 2018 - Jan 2021}
+  {
+    \item Developed test procedures and a web application to aggregate device specifications, test data, and test metrics.
+    \item Worked on ecosystem health, cross-device communication, and HDMI-related testing for AVRs, soundbars, TVs, and set-top boxes.
+  }
+
+\experienceentry
+  {Audio QA Intern}
+  {Dolby Laboratories}
+  {Wroclaw, Poland}
+  {Jul 2018 - Sep 2018}
+  {
+    \item Built a Python-based toolchain for audio-video delay measurement automation.
+  }
+
+\experienceentry
+  {IT Consultant}
+  {Consulting Wojciech Bajer}
+  {Poland / Worldwide}
+  {Mar 2021 - Present}
+  {
+    \item Delivered consulting projects in software engineering, web development, e-commerce, and audio engineering for clients in Poland and abroad.
+  }
+
+\cvsection{Education}
+{\bfseries Master of Science in Acoustic Engineering}\par
+Wroclaw University of Technology, Wroclaw, Poland | 2018 - 2019\par
+Relevant coursework: Electronics, acoustics, digital signal processing, ultrasound, acoustic signal analysis\par
+Thesis: The impact of propagation conditions on the distribution of sound level from industrial sources in the CNOSSOS calculation methodology
+
+\vspace{0.5em}
+{\bfseries Bachelor of Engineering in IT in Electronics}\par
+Silesian University of Technology, Gliwice, Poland | 2014 - 2018\par
+Relevant coursework: Programming, electronics, electronic circuits, metrology, Atmel AVR\par
+Thesis: Media server with audio streaming service based on Arduino UNO
+
+\cvsection{Certifications}
+\begin{itemize}
+  \item ISTQB Certified Tester Foundation Level (CTFL) - ISTQB - 2019 - Credential ID 66890
+  \item Scrum Master Training - Scrum Group - 2019 - Credential ID 4637/09/2019/SG
+  \item SEP Electrician Certificate up to 1kV - Stowarzyszenie Elektrykow Polskich (SEP) - 2019
+  \item Certified LabVIEW Associate Developer - NI - National Instruments - 2018
+  \item Enhanced English Pronunciation - InterComm - 2020
+\end{itemize}
+
+\end{document}

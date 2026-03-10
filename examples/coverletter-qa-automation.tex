@@ -1,0 +1,58 @@
+%!TEX TS-program = lualatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\colorlet{awesome}{awesome-red}
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\photo[rectangle,noedge,left]{./examples/profile-wb}
+\name{Wojciech}{Bajer}
+\position{QA Team Lead{\enskip\cdotp\enskip}DevOps Engineer{\enskip\cdotp\enskip}Co-founder / CTO}
+\address{Wrocław, Poland}
+
+\mobile{(+48) 694-913-653}
+\email{mail@wojciechbajer.com}
+\homepage{www.wojciechbajer.com}
+\github{neverased}
+\linkedin{wojciech-bajer}
+
+\quote{"The only thing that is doing the thing is doing the thing."}
+
+\recipient
+  {Hiring Manager}
+  {Company Name\\Company Address}
+\letterdate{\today}
+\lettertitle{Application for QA Automation Engineer / SDET}
+\letteropening{Dear Hiring Manager,}
+\letterclosing{Sincerely,}
+\letterenclosure[Attached]{Curriculum Vitae}
+
+\begin{document}
+
+\makecvheader[R]
+\makecvfooter
+  {\today}
+  {Wojciech Bajer~~~·~~~QA Automation Cover Letter}
+  {}
+
+\makelettertitle
+
+\begin{cvletter}
+
+I am applying for the QA Automation Engineer / SDET position at Company Name. My background combines quality engineering, automation, DevOps, and cross-functional product work across web, cloud, mobile, and hardware-connected systems.
+
+At Efectivo / Humanit Group I built end-to-end automation for product and ecosystem workflows, created verification scripts for Hardware-in-the-Loop testing, and worked closely with frontend, backend, mobile, and hardware teams to define test strategy and automation direction. My tooling stack includes Playwright, Selenium, Pytest, Python, TypeScript, JavaScript, GitHub Actions, Azure DevOps, Docker, and Kubernetes.
+
+I approach automation as an engineering discipline, not just a testing task. That means building reliable frameworks, integrating them into CI/CD, improving signal quality, and keeping test suites maintainable as products evolve. My broader background in observability and platform tooling also helps me diagnose failures faster and improve release confidence.
+
+I would be glad to bring that mix of practical automation experience, systems thinking, and product collaboration to Company Name.
+
+\end{cvletter}
+
+\makeletterclosing
+
+\end{document}

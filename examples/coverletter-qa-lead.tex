@@ -1,0 +1,58 @@
+%!TEX TS-program = lualatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\colorlet{awesome}{awesome-red}
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\photo[rectangle,noedge,left]{./examples/profile-wb}
+\name{Wojciech}{Bajer}
+\position{QA Team Lead{\enskip\cdotp\enskip}DevOps Engineer{\enskip\cdotp\enskip}Co-founder / CTO}
+\address{Wrocław, Poland}
+
+\mobile{(+48) 694-913-653}
+\email{mail@wojciechbajer.com}
+\homepage{www.wojciechbajer.com}
+\github{neverased}
+\linkedin{wojciech-bajer}
+
+\quote{"The only thing that is doing the thing is doing the thing."}
+
+\recipient
+  {Hiring Manager}
+  {Company Name\\Company Address}
+\letterdate{\today}
+\lettertitle{Application for QA Lead}
+\letteropening{Dear Hiring Manager,}
+\letterclosing{Sincerely,}
+\letterenclosure[Attached]{Curriculum Vitae}
+
+\begin{document}
+
+\makecvheader[R]
+\makecvfooter
+  {\today}
+  {Wojciech Bajer~~~·~~~QA Lead Cover Letter}
+  {}
+
+\makelettertitle
+
+\begin{cvletter}
+
+I am applying for the QA Lead position at Company Name. I currently work as QA Team Lead at Efectivo / Humanit Group, run Consulting Wojciech Bajer, and recently co-founded Lexense.ai where I serve as Co-founder and CTO.
+
+My work combines leadership and execution. I define QA strategy, test architecture, release readiness, and cross-team quality processes, while still working directly with tooling, CI/CD, observability, and automation. I have led ecosystem-level QA initiatives, introduced reporting and monitoring workflows with Grafana, Datadog, and ReportPortal, and supported product, engineering, and commercial teams with structured quality ownership.
+
+Earlier in my career I worked across automotive, consumer electronics, and hardware-integrated systems, including Dolby Laboratories, Polestar, and Volvo Cars. That background helped me build a practical approach to quality: align teams around risk, improve feedback loops, automate what matters, and keep delivery moving.
+
+I would bring to Company Name a hands-on QA lead profile that can set direction, support teams operationally, and improve quality at both the process and implementation level.
+
+\end{cvletter}
+
+\makeletterclosing
+
+\end{document}

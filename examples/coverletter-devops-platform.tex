@@ -1,0 +1,58 @@
+%!TEX TS-program = lualatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\colorlet{awesome}{awesome-red}
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\photo[rectangle,noedge,left]{./examples/profile-wb}
+\name{Wojciech}{Bajer}
+\position{QA Team Lead{\enskip\cdotp\enskip}DevOps Engineer{\enskip\cdotp\enskip}Co-founder / CTO}
+\address{Wrocław, Poland}
+
+\mobile{(+48) 694-913-653}
+\email{mail@wojciechbajer.com}
+\homepage{www.wojciechbajer.com}
+\github{neverased}
+\linkedin{wojciech-bajer}
+
+\quote{"The only thing that is doing the thing is doing the thing."}
+
+\recipient
+  {Hiring Manager}
+  {Company Name\\Company Address}
+\letterdate{\today}
+\lettertitle{Application for DevOps / Platform Engineer}
+\letteropening{Dear Hiring Manager,}
+\letterclosing{Sincerely,}
+\letterenclosure[Attached]{Curriculum Vitae}
+
+\begin{document}
+
+\makecvheader[R]
+\makecvfooter
+  {\today}
+  {Wojciech Bajer~~~·~~~DevOps Cover Letter}
+  {}
+
+\makelettertitle
+
+\begin{cvletter}
+
+I am applying for the DevOps / Platform Engineer position at Company Name. Alongside my current QA leadership role, I have hands-on experience building CI/CD infrastructure, improving developer workflows, and supporting delivery platforms in environments that require reliability, visibility, and collaboration across teams.
+
+In consulting work for Polestar and Volvo Cars, I worked on CI/CD workflows, Azure DevOps and GitHub-based delivery pipelines, containerization, Kubernetes-based deployment workflows, and engineering enablement. I also built Grafana-based release visibility and logging solutions that helped teams understand delivery status across services. Across roles, I have worked with GitHub Actions, Azure DevOps, Docker, Kubernetes, AWS, Azure, Ansible, Grafana, and Datadog.
+
+What I bring is a pragmatic platform mindset: reduce friction for engineers, improve release confidence, automate repeated work, and make systems observable enough to support fast, informed decisions. Because I also come from QA and product-facing roles, I tend to design platform solutions that serve both engineering efficiency and software quality.
+
+I would welcome the opportunity to contribute that blend of platform engineering, automation, and operational clarity at Company Name.
+
+\end{cvletter}
+
+\makeletterclosing
+
+\end{document}
