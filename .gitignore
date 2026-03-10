@@ -24,3 +24,5 @@
 ### cv.fdb_latexmk ###
 *.fdb_latexmk
 
+### Generated cover letter outputs ###
+output/

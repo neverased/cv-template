@@ -1,0 +1,156 @@
+{
+  "person": {
+    "first_name": "Wojciech",
+    "last_name": "Bajer",
+    "position": "QA Team Lead{\\enskip\\cdotp\\enskip}DevOps Engineer{\\enskip\\cdotp\\enskip}Co-founder / CTO",
+    "address": "Wrocław, Poland",
+    "mobile": "(+48) 694-913-653",
+    "email": "mail@wojciechbajer.com",
+    "homepage": "www.wojciechbajer.com",
+    "github": "neverased",
+    "linkedin": "wojciech-bajer",
+    "quote": "\"The only thing that is doing the thing is doing the thing.\"",
+    "photo_path": "./examples/profile-wb"
+  },
+  "shared": {
+    "current_roles": "I currently work as QA Team Lead at Efectivo / Humanit Group, run Consulting Wojciech Bajer, and recently co-founded Lexense.ai where I serve as Co-founder and CTO.",
+    "common_skills": [
+      "Playwright",
+      "Selenium",
+      "Pytest",
+      "Python",
+      "TypeScript",
+      "JavaScript",
+      "GitHub Actions",
+      "Azure DevOps",
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "Azure",
+      "Grafana",
+      "Datadog",
+      "ReportPortal",
+      "CI/CD",
+      "test automation",
+      "test strategy",
+      "QA leadership",
+      "observability",
+      "release management",
+      "SDET",
+      "platform engineering"
+    ],
+    "domains": {
+      "automotive": "automotive",
+      "consumer electronics": "consumer electronics",
+      "hardware": "hardware-integrated systems",
+      "fintech": "fintech",
+      "saas": "SaaS",
+      "legal": "legal technology",
+      "ai": "AI-enabled products",
+      "platform": "internal platform engineering"
+    }
+  },
+  "tracks": {
+    "qa-lead": {
+      "label": "QA Lead",
+      "signals": [
+        "qa lead",
+        "quality assurance lead",
+        "quality lead",
+        "test lead",
+        "test manager",
+        "quality manager",
+        "test strategy",
+        "quality strategy",
+        "release readiness",
+        "quality processes",
+        "stakeholders",
+        "leadership",
+        "manager"
+      ],
+      "keywords": [
+        "test strategy",
+        "quality strategy",
+        "release readiness",
+        "test architecture",
+        "test planning",
+        "qa leadership",
+        "metrics",
+        "reporting",
+        "release management",
+        "cross-functional"
+      ],
+      "intro": "I am applying for the ${role} position at ${company}. ${current_roles}",
+      "body": "My work combines leadership and execution. I define QA strategy, test architecture, release readiness, and cross-team quality processes, while still working directly with tooling, CI/CD, observability, and automation. I have led ecosystem-level QA initiatives, introduced reporting and monitoring workflows with Grafana, Datadog, and ReportPortal, and supported product, engineering, and commercial teams with structured quality ownership.",
+      "closing": "I would bring to ${company} a hands-on QA lead profile that can set direction, support teams operationally, and improve quality at both the process and implementation level."
+    },
+    "qa-automation": {
+      "label": "QA Automation Engineer / SDET",
+      "signals": [
+        "qa automation",
+        "automation engineer",
+        "sdet",
+        "test automation",
+        "playwright",
+        "selenium",
+        "pytest",
+        "automation framework",
+        "e2e",
+        "end-to-end",
+        "quality engineer"
+      ],
+      "keywords": [
+        "playwright",
+        "selenium",
+        "pytest",
+        "python",
+        "typescript",
+        "javascript",
+        "github actions",
+        "azure devops",
+        "test automation",
+        "e2e",
+        "api testing",
+        "ci/cd"
+      ],
+      "intro": "I am applying for the ${role} position at ${company}. My background combines quality engineering, automation, DevOps, and cross-functional product work across web, cloud, mobile, and hardware-connected systems.",
+      "body": "At Efectivo / Humanit Group I built end-to-end automation for product and ecosystem workflows, created verification scripts for Hardware-in-the-Loop testing, and worked closely with frontend, backend, mobile, and hardware teams to define test strategy and automation direction. I approach automation as an engineering discipline, not just a testing task. That means building reliable frameworks, integrating them into CI/CD, improving signal quality, and keeping test suites maintainable as products evolve.",
+      "closing": "I would be glad to bring that mix of practical automation experience, systems thinking, and product collaboration to ${company}."
+    },
+    "devops-platform": {
+      "label": "DevOps / Platform Engineer",
+      "signals": [
+        "devops",
+        "platform engineer",
+        "platform engineering",
+        "site reliability",
+        "sre",
+        "kubernetes",
+        "docker",
+        "github actions",
+        "azure devops",
+        "ci/cd",
+        "cloud",
+        "infrastructure",
+        "observability"
+      ],
+      "keywords": [
+        "github actions",
+        "azure devops",
+        "docker",
+        "kubernetes",
+        "aws",
+        "azure",
+        "ansible",
+        "grafana",
+        "datadog",
+        "platform engineering",
+        "ci/cd",
+        "observability"
+      ],
+      "intro": "I am applying for the ${role} position at ${company}. Alongside my current QA leadership role, I have hands-on experience building CI/CD infrastructure, improving developer workflows, and supporting delivery platforms in environments that require reliability, visibility, and collaboration across teams.",
+      "body": "In consulting work for Polestar and Volvo Cars, I worked on CI/CD workflows, Azure DevOps- and GitHub-based delivery pipelines, containerization, Kubernetes-based deployment workflows, and engineering enablement. I also built Grafana-based release visibility and logging solutions that helped teams understand delivery status across services. What I bring is a pragmatic platform mindset: reduce friction for engineers, improve release confidence, automate repeated work, and make systems observable enough to support fast, informed decisions.",
+      "closing": "I would welcome the opportunity to contribute that blend of platform engineering, automation, and operational clarity at ${company}."
+    }
+  }
+}

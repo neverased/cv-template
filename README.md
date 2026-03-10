@@ -59,6 +59,39 @@ docker run --rm --user $(id -u):$(id -g) -i -w "/doc" -v "$PWD":/doc texlive/tex
 
 In either case, this should result in the creation of ``{your-cv}.pdf``
 
+## Tailored Cover Letter Generator
+
+This repo also includes a local generator that creates a tailored cover letter from a job description URL or text and compiles it to PDF.
+
+Examples:
+
+```bash
+python3 scripts/generate_cover_letter.py \
+  --company "Acme" \
+  --role "Senior QA Automation Engineer" \
+  --job-file /path/to/job-description.txt
+```
+
+```bash
+python3 scripts/generate_cover_letter.py \
+  --company "Acme" \
+  --role "Platform Engineer" \
+  --job-url "https://example.com/jobs/platform-engineer"
+```
+
+Optional flags:
+
+- `--track qa-lead|qa-automation|devops-platform` to force a specific variant
+- `--company-address "Street, City"` to change the header block
+- `--output-prefix output/acme-platform` to choose output paths
+- `--no-compile` to generate only the `.tex` file
+
+By default the script writes:
+
+- `output/coverletter-generated.tex`
+- `output/coverletter-generated.pdf`
+- `output/coverletter-generated.json`
+
 ## Credit
 
 [**LaTeX**](https://www.latex-project.org) is a fantastic typesetting program that a lot of people use these days, especially the math and computer science people in academia.

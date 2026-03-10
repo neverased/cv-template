@@ -1,0 +1,56 @@
+%!TEX TS-program = lualatex
+%!TEX encoding = UTF-8 Unicode
+% Generated cover letter. Edit if needed after generation.
+
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\colorlet{awesome}{awesome-red}
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\photo[rectangle,noedge,left]{${photo_path}}
+\name{${first_name}}{${last_name}}
+\position{${position}}
+\address{${address}}
+
+\mobile{${mobile}}
+\email{${email}}
+\homepage{${homepage}}
+\github{${github}}
+\linkedin{${linkedin}}
+
+\quote{${quote}}
+
+\recipient
+  {Hiring Manager}
+  {${company}\\${company_address}}
+\letterdate{\today}
+\lettertitle{Application for ${role}}
+\letteropening{Dear Hiring Manager,}
+\letterclosing{Sincerely,}
+\letterenclosure[Attached]{Curriculum Vitae}
+
+\begin{document}
+
+\makecvheader[R]
+\makecvfooter
+  {\today}
+  {${first_name} ${last_name}~~~·~~~Generated Cover Letter}
+  {}
+
+\makelettertitle
+
+\begin{cvletter}
+
+${paragraph_1}
+
+${paragraph_2}
+
+${paragraph_3}
+
+\end{cvletter}
+
+\makeletterclosing
+
+\end{document}
