@@ -46,7 +46,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--track",
-        choices=["auto", "qa-lead", "qa-automation", "devops-platform"],
+        choices=["auto", "qa-lead", "qa-automation", "devops-platform", "applied-ai"],
         default="auto",
         help="Force a template track or let the script infer it",
     )
@@ -174,6 +174,7 @@ def build_paragraphs(
     job_text: str,
 ) -> tuple[str, str, str, list[str], list[str]]:
     track = profile["tracks"][track_name]
+    include_overlap_summary = track.get("include_overlap_summary", True)
     matches = collect_matches(job_text, track["keywords"] + profile["shared"]["common_skills"])
     domains = collect_domains(job_text, profile)
 
@@ -184,11 +185,11 @@ def build_paragraphs(
     )
 
     extras: list[str] = []
-    if matches:
+    if include_overlap_summary and matches:
         extras.append(
             f"The strongest overlap with your role includes {natural_join(matches)}."
         )
-    if domains:
+    if include_overlap_summary and domains:
         extras.append(
             f"I have also worked in environments related to {natural_join(domains)}."
         )

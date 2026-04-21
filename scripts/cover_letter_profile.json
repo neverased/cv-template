@@ -151,6 +151,37 @@
       "intro": "I am applying for the ${role} position at ${company}. Alongside my current QA leadership role, I have hands-on experience building CI/CD infrastructure, improving developer workflows, and supporting delivery platforms in environments that require reliability, visibility, and collaboration across teams.",
       "body": "In consulting work for Polestar and Volvo Cars, I worked on CI/CD workflows, Azure DevOps- and GitHub-based delivery pipelines, containerization, Kubernetes-based deployment workflows, and engineering enablement. I also built Grafana-based release visibility and logging solutions that helped teams understand delivery status across services. What I bring is a pragmatic platform mindset: reduce friction for engineers, improve release confidence, automate repeated work, and make systems observable enough to support fast, informed decisions.",
       "closing": "I would welcome the opportunity to contribute that blend of platform engineering, automation, and operational clarity at ${company}."
+    },
+    "applied-ai": {
+      "label": "Applied AI Engineer",
+      "signals": [
+        "applied ai",
+        "ai engineer",
+        "llm",
+        "agentic",
+        "ai-assisted development",
+        "internal tools",
+        "developer tooling",
+        "node.js",
+        "typescript",
+        "backend"
+      ],
+      "keywords": [
+        "node.js",
+        "typescript",
+        "llm",
+        "rag",
+        "openai",
+        "automation",
+        "agentic workflows",
+        "backend",
+        "internal tools",
+        "developer tooling"
+      ],
+      "include_overlap_summary": false,
+      "intro": "I am applying for the ${role} position at ${company}. My work combines AI-native product engineering, backend system design, and hands-on delivery across product systems and internal engineering workflows, with a focus on moving from problem definition to architecture and production implementation.",
+      "body": "At Lexense.ai I architected an AI-native legal platform across mobile, web, extension, backend, and knowledge services, designing the system around Node.js / NestJS, OpenAI, RAG, OCR, document analysis, and conversational workflows, with self-hosted infrastructure, observability, CI/CD, and secure handling of sensitive data. At Efectivo / Humanit Group I designed LLM-powered agents for test automation and built LLM + RAG documentation and knowledge workflows to improve how engineers test, troubleshoot, and access product knowledge.",
+      "closing": "I would bring to ${company} a pragmatic applied AI profile: identify where AI or automation creates real value, design the system end to end, and help teams adopt AI-assisted development workflows with the right balance of speed, reliability, and maintainability."
     }
   }
 }

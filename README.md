@@ -79,9 +79,17 @@ python3 scripts/generate_cover_letter.py \
   --job-url "https://example.com/jobs/platform-engineer"
 ```
 
+```bash
+python3 scripts/generate_cover_letter.py \
+  --company "Acme" \
+  --role "Principal Applied AI Engineer" \
+  --job-url "https://example.com/jobs/applied-ai-engineer" \
+  --track applied-ai
+```
+
 Optional flags:
 
-- `--track qa-lead|qa-automation|devops-platform` to force a specific variant
+- `--track qa-lead|qa-automation|devops-platform|applied-ai` to force a specific variant
 - `--company-address "Street, City"` to change the header block
 - `--output-prefix output/acme-platform` to choose output paths
 - `--no-compile` to generate only the `.tex` file
