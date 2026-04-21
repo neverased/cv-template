@@ -1,0 +1,119 @@
+%!TEX TS-program = lualatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[a4paper,margin=1.4cm]{geometry}
+\usepackage{enumitem}
+\usepackage{fontspec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+
+\setmainfont{TeX Gyre Heros}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.2em}
+\pagestyle{empty}
+\urlstyle{same}
+
+\definecolor{accent}{HTML}{1F2937}
+\definecolor{textgray}{HTML}{4B5563}
+
+\setlist[itemize]{leftmargin=1.4em, topsep=0.2em, itemsep=0.2em, parsep=0pt, partopsep=0pt}
+
+\newcommand{\cvsection}[1]{%
+  \vspace{0.7em}%
+  {\large\bfseries\color{accent} #1}\par
+  \vspace{0.15em}%
+  \hrule
+  \vspace{0.35em}%
+}
+
+\newcommand{\contactline}[1]{{\footnotesize\color{textgray} #1}\par}
+
+\newcommand{\experienceentry}[5]{%
+  {\normalsize\bfseries #1}\par
+  {\normalsize #2}\par
+  {\footnotesize\color{textgray} #3 | #4}\par
+  \begin{itemize}
+  #5
+  \end{itemize}
+}
+
+\begin{document}
+
+{\LARGE\bfseries Wojciech Bajer}\par
+{\large QA Automation Specialist | Playwright | API Testing | Release Validation}\par
+
+\contactline{Wroclaw, Poland | \href{mailto:mail@wojciechbajer.com}{mail@wojciechbajer.com} | \href{https://www.wojciechbajer.com}{wojciechbajer.com}}
+\contactline{\href{https://github.com/neverased}{github.com/neverased} | \href{https://www.linkedin.com/in/wojciech-bajer}{linkedin.com/in/wojciech-bajer} | +48 694 913 653}
+
+\cvsection{Professional Summary}
+QA Automation Specialist focused on end-to-end and API test automation for release validation. Built automation from scratch at Efectivo / Humanit Group, maintained dozens of E2E and API scenarios, reduced regression and release validation by more than 1 day, cut manual verification effort by 30\%+, and supported several releases per month. Hands-on with Playwright, Selenium, Pytest, TypeScript, Python, and CI/CD-driven release checks.
+
+\cvsection{Core Skills}
+\textbf{Automation Frameworks:} Playwright, Selenium, Pytest, E2E automation, API automation, regression suites\par
+\textbf{Programming:} TypeScript, JavaScript, Python\par
+\textbf{API \& Release:} API testing, REST APIs, backend test coverage, release validation\par
+\textbf{CI/CD \& Reporting:} GitHub Actions, Azure DevOps, CI/CD pipelines, test reporting\par
+\textbf{Quality Engineering:} root cause analysis, flakiness reduction, regression design, cross-system testing\par
+
+\cvsection{Professional Experience}
+\experienceentry
+  {Quality Assurance Team Lead}
+  {Efectivo, Humanit Group}
+  {Wroclaw, Poland}
+  {Feb 2025 - Present}
+  {
+    \item Owned and expanded dozens of E2E and API scenarios across a 6-8-layer product ecosystem, deepening regression coverage for release-critical flows.
+    \item Reduced regression and release validation by more than 1 day and cut manual verification effort by 30\%+ through automation-first release checks.
+    \item Improved backend test coverage, CI/CD feedback, and release tooling to support several releases per month while also supporting a 5-person QA team.
+  }
+
+\experienceentry
+  {QA and Automation Specialist}
+  {Efectivo, Humanit Group}
+  {Wroclaw, Poland}
+  {May 2024 - Feb 2025}
+  {
+    \item Built end-to-end automation from scratch for product and ecosystem workflows across web, backend, and cross-system release paths.
+    \item Added verification scripts for Hardware-in-the-Loop testing and release validation to replace manual-heavy checks with repeatable automation.
+    \item Prioritized automation coverage with engineering teams for the highest-risk release paths and regression gaps.
+  }
+
+\experienceentry
+  {DevOps Engineer (Consultant via HiQ)}
+  {Volvo Cars / Polestar}
+  {Gothenburg, Sweden}
+  {Jan 2022 - Mar 2024}
+  {
+    \item Built CI/CD workflows, release tooling, and delivery automation used to improve integration feedback and reporting across engineering teams.
+  }
+
+\experienceentry
+  {QA Engineer / QA Lead - Consumer Entertainment Technology}
+  {Dolby Laboratories}
+  {Wroclaw, Poland}
+  {Oct 2018 - Dec 2021}
+  {
+    \item Built earlier QA depth across interoperability, device-ecosystem, and release-focused testing for consumer entertainment products.
+    \item Owned test design, metrics, and tooling, including dashboards used for stakeholder-facing release reporting.
+  }
+
+\cvsection{Education}
+{\bfseries Master of Science in Acoustic Engineering}\par
+Wroclaw University of Technology, Wroclaw, Poland | 2018 - 2019\par
+
+\vspace{0.4em}
+{\bfseries Bachelor of Engineering in IT in Electronics}\par
+Silesian University of Technology, Gliwice, Poland | 2014 - 2018\par
+
+\cvsection{Certifications}
+\begin{itemize}
+  \item ISTQB Certified Tester Foundation Level (CTFL) - ISTQB - 2019 - Credential ID 66890
+  \item Scrum Master Training - Scrum Group - 2019 - Credential ID 4637/09/2019/SG
+  \item SEP Electrician Certificate up to 1kV - Stowarzyszenie Elektrykow Polskich (SEP) - 2019
+  \item Certified LabVIEW Associate Developer - NI - National Instruments - 2018
+  \item Enhanced English Pronunciation - InterComm - 2020
+\end{itemize}
+
+\end{document}
