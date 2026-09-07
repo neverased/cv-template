@@ -2,18 +2,18 @@
   "person": {
     "first_name": "Wojciech",
     "last_name": "Bajer",
-    "position": "QA Team Lead{\\enskip\\cdotp\\enskip}DevOps Engineer{\\enskip\\cdotp\\enskip}Co-founder / CTO",
+    "position": "QA Lead{\\enskip\\cdotp\\enskip}Test Strategy{\\enskip\\cdotp\\enskip}Automation",
     "address": "Wrocław, Poland",
     "mobile": "(+48) 694-913-653",
     "email": "mail@wojciechbajer.com",
-    "homepage": "www.wojciechbajer.com",
+    "homepage": "https://www.wojciechbajer.com",
     "github": "neverased",
     "linkedin": "wojciech-bajer",
-    "quote": "\"The only thing that is doing the thing is doing the thing.\"",
+    "quote": "",
     "photo_path": "./examples/profile-wb"
   },
   "shared": {
-    "current_roles": "I currently work as QA Team Lead at Efectivo / Humanit Group, run Consulting Wojciech Bajer, and recently co-founded Lexense.ai where I serve as Co-founder and CTO.",
+    "current_roles": "I lead a five-person QA team at Efectivo / Humanit Group, owning test strategy, release readiness and quality metrics. My experience includes QA work at Dolby and DevOps consulting for Volvo Cars and Polestar.",
     "common_skills": [
       "Playwright",
       "Selenium",
