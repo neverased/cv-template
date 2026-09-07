@@ -1,5 +1,7 @@
 # Główne CV: AI, agenci, RAG i weryfikacja
 
+Ten zapis dotyczy etapu przed [uzupełnieniem zarządzania liniowego i aplikacji Flutter](cv-leadership-mobile-update-2026-09-07.md). Liczba 680 wyrazów i lista kwestii do potwierdzenia na końcu opisują ówczesny stan, a nie najnowszy eksport.
+
 Na życzenie autora rozbudowano główne CV QA Lead / Test Manager (`examples/cv.tex` i `examples/cv.pdf`) o doświadczenie AI z Lexense oraz przywrócono istniejące zdjęcie `examples/profile-wb.png`. Eksport do aplikowania: `output/pdf/Wojciech_Bajer_QA_Lead_CV.pdf`.
 
 ## Treść

@@ -31,9 +31,9 @@ make application-pdfs CC='lualatex -interaction=nonstopmode -halt-on-error'
 | QA Lead / Test Manager | `examples/cv.tex` (photo and AI focus) | `examples/cv-ats.tex` | `examples/cv/` |
 | QA Automation | `examples/resume.tex` | `examples/cv-ats-qa-automation.tex` | `examples/resume/` |
 
-Base contact details and typography are in `examples/shared/layout.tex`; the main CV overrides the header in `examples/cv/photo-header.tex` using `examples/profile-wb.png`. Names, role titles, dates, languages and the release improvement statement are in `examples/shared/profile.tex`. The main CV uses `summary-ai.tex`, `skills-ai.tex` and `experience-ai.tex` in `examples/cv/`, with compact earlier experience and education. Other versions use the original profile sections and shared earlier experience, education and certifications.
+Base contact details and typography are in `examples/shared/layout.tex`; the main CV overrides the header in `examples/cv/photo-header.tex` using `examples/profile-wb.png`. Names, role titles, dates, languages, line management, mobile application ownership and the release improvement statement are in `examples/shared/profile.tex`. The main CV uses `summary-ai.tex`, `skills-ai.tex` and `experience-ai.tex` in `examples/cv/`, with compact earlier experience and education. Other versions use the original profile sections and shared earlier experience, education and certifications.
 
-Edit shared facts rather than copying them into the entry points. Historical role titles and dates must remain accurate when tailoring the headline. See `docs/cv-revision-2026-09-07.md` for the initial audit corrections and `docs/cv-ai-update-2026-09-07.md` for the subsequent main-CV expansion and verification.
+Edit shared facts rather than copying them into the entry points. Historical role titles and dates must remain accurate when tailoring the headline. See `docs/cv-revision-2026-09-07.md` for the initial audit corrections, `docs/cv-ai-update-2026-09-07.md` for the main-CV AI expansion and `docs/cv-leadership-mobile-update-2026-09-07.md` for the subsequent leadership and Flutter update.
 
 ## Upstream template preview
 
