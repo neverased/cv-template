@@ -1,161 +1,20 @@
 %!TEX TS-program = lualatex
 %!TEX encoding = UTF-8 Unicode
-
-\documentclass[10pt,a4paper]{article}
-
-\usepackage[a4paper,margin=1.4cm]{geometry}
-\usepackage{enumitem}
-\usepackage{fontspec}
-\usepackage[hidelinks]{hyperref}
-\usepackage{xcolor}
-
-\setmainfont{TeX Gyre Heros}
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{0.2em}
-\pagestyle{empty}
-\urlstyle{same}
-
-\definecolor{accent}{HTML}{1F2937}
-\definecolor{textgray}{HTML}{4B5563}
-
-\setlist[itemize]{leftmargin=1.4em, topsep=0.2em, itemsep=0.2em, parsep=0pt, partopsep=0pt}
-
-\newcommand{\cvsection}[1]{%
-  \vspace{0.7em}%
-  {\large\bfseries\color{accent} #1}\par
-  \vspace{0.15em}%
-  \hrule
-  \vspace{0.35em}%
-}
-
-\newcommand{\contactline}[1]{{\footnotesize\color{textgray} #1}\par}
-
-\newcommand{\experienceentry}[5]{%
-  {\normalsize\bfseries #1}\par
-  {\normalsize #2}\par
-  {\footnotesize\color{textgray} #3 | #4}\par
-  \begin{itemize}
-  #5
-  \end{itemize}
-}
-
+\documentclass[11pt,a4paper]{article}
+\makeatletter
+\def\input@path{{examples/}{./}}
+\makeatother
+\newif\ifcvplain
+\cvplaintrue
+\newcommand{\cvProfile}{QA Lead / Test Manager}
+\newcommand{\cvHeadline}{QA Lead / Test Manager | Strategy, Automation \& Release Quality}
+\input{shared/layout.tex}
+\input{shared/profile.tex}
 \begin{document}
-
-% Tailor this line to the target job title before applying.
-{\LARGE\bfseries Wojciech Bajer}\par
-{\large QA Lead | Test Strategy | Automation | API | CI/CD}\par
-
-\contactline{Wroclaw, Poland | \href{mailto:mail@wojciechbajer.com}{mail@wojciechbajer.com} | \href{https://www.wojciechbajer.com}{wojciechbajer.com}}
-\contactline{\href{https://github.com/neverased}{github.com/neverased} | \href{https://www.linkedin.com/in/wojciech-bajer}{linkedin.com/in/wojciech-bajer} | +48 694 913 653}
-
-\cvsection{Professional Summary}
-Hands-on QA Lead with commercial experience across API, customer-hosted servers, backend, frontend, mobile, end-to-end, and infrastructure workflows. Line-managed a 5-person QA team, owned QA strategy, QA minima, release readiness, and quality metrics across a 6-8-layer ecosystem, and built and maintained dozens of E2E and API scenarios. Reduced regression and release validation by more than 1 day, cut manual verification effort by 30\%+, and strengthened release confidence through clearer coverage, faster validation, and stakeholder-ready reporting.
-
-\cvsection{Core Skills}
-\textbf{QA Leadership \& Strategy:} QA Lead, hands-on leadership, QA strategy, QA minima, release readiness, quality metrics, test planning, test architecture, stakeholder management\par
-\textbf{Testing \& Automation:} Playwright, Selenium, Pytest, E2E testing, regression testing, exploratory testing, API testing, integration testing, backend testing, HIL testing\par
-\textbf{CI/CD \& Observability:} GitHub Actions, Azure DevOps, Docker, Kubernetes, Grafana, Datadog, ReportPortal, release visibility, root cause analysis\par
-\textbf{Test Management \& Collaboration:} TestRail, qTest, Confluence, documentation, Agile, Scrum, English, Polish\par
-
-\cvsection{Professional Experience}
-\experienceentry
-  {Quality Assurance Team Lead}
-  {Efectivo, Humanit Group}
-  {Wroclaw, Poland}
-  {Feb 2025 - Present}
-  {
-    \item Line-managed a 5-person QA team and owned QA strategy, QA minima, release readiness, and quality metrics.
-    \item Owned quality across a 6-8-layer ecosystem covering API, customer-hosted servers, backend, frontend, mobile, E2E, and infrastructure.
-    \item Built and maintained dozens of E2E and API scenarios, reducing regression and release validation by more than 1 day.
-    \item Reduced manual verification effort by 30\%+ while supporting several releases per month.
-  }
-
-\experienceentry
-  {QA and Automation Specialist}
-  {Efectivo, Humanit Group}
-  {Wroclaw, Poland}
-  {May 2024 - Feb 2025}
-  {
-    \item Built E2E automation for product and ecosystem workflows from scratch.
-    \item Created HIL verification scripts and API checks for release validation.
-  }
-
-\experienceentry
-  {DevOps Engineer (Consultant via HiQ)}
-  {Polestar}
-  {Gothenburg, Sweden}
-  {Feb 2023 - Mar 2024}
-  {
-    \item Built CI/CD infrastructure with Azure DevOps, GitHub, Docker, and Kubernetes, improving release visibility with Grafana-based reporting.
-  }
-
-\experienceentry
-  {DevOps Engineer (Consultant via HiQ)}
-  {Volvo Cars}
-  {Gothenburg, Sweden}
-  {Jan 2022 - Jan 2023}
-  {
-    \item Improved CI/CD workflows and automation that simplified release procedures.
-  }
-
-\experienceentry
-  {QA Engineer / QA Lead - Consumer Entertainment Technology}
-  {Dolby Laboratories}
-  {Wroclaw, Poland}
-  {Jan 2021 - Dec 2021}
-  {
-    \item Led interoperability and ecosystem testing across software and hardware workflows.
-    \item Owned test design, planning, architecture, metrics, and stakeholder dashboards for release quality.
-  }
-
-\experienceentry
-  {Associate QA Engineer - Consumer Entertainment Technology}
-  {Dolby Laboratories}
-  {Wroclaw, Poland}
-  {Oct 2018 - Jan 2021}
-  {
-    \item Worked on ecosystem health, cross-device communication, and HDMI testing for AVRs, soundbars, TVs, and set-top boxes while developing lightweight reporting for device readiness and QA trends.
-  }
-
-\cvsection{Additional Experience}
-\experienceentry
-  {Co-founder and CTO}
-  {Lexense (lexense.ai)}
-  {Poland}
-  {Jan 2025 - Present}
-  {
-    \item After-hours product work: owned backend, infrastructure, and architecture for an AI-native legal platform.
-    \item Built Node.js, NestJS, MongoDB, Redis, Qdrant, OCR, and self-hosted observability and CI/CD workflows.
-  }
-
-\experienceentry
-  {IT Consultant}
-  {Consulting Wojciech Bajer}
-  {Poland / Worldwide}
-  {Mar 2021 - Present}
-  {
-    \item Delivered software and technical consulting across web systems, tooling, and implementation support.
-  }
-
-\cvsection{Education}
-{\bfseries Master of Science in Acoustic Engineering}\par
-Wroclaw University of Technology, Wroclaw, Poland | 2018 - 2019\par
-Relevant coursework: Electronics, acoustics, digital signal processing, ultrasound, acoustic signal analysis\par
-Thesis: The impact of propagation conditions on the distribution of sound level from industrial sources in the CNOSSOS calculation methodology
-
-\vspace{0.5em}
-{\bfseries Bachelor of Engineering in IT in Electronics}\par
-Silesian University of Technology, Gliwice, Poland | 2014 - 2018\par
-Relevant coursework: Programming, electronics, electronic circuits, metrology, Atmel AVR\par
-Thesis: Media server with audio streaming service based on Arduino UNO
-
-\cvsection{Certifications}
-\begin{itemize}
-  \item ISTQB Certified Tester Foundation Level (CTFL) - ISTQB - 2019 - Credential ID 66890
-  \item Scrum Master Training - Scrum Group - 2019 - Credential ID 4637/09/2019/SG
-  \item SEP Electrician Certificate up to 1kV - Stowarzyszenie Elektrykow Polskich (SEP) - 2019
-  \item Certified LabVIEW Associate Developer - NI - National Instruments - 2018
-  \item Enhanced English Pronunciation - InterComm - 2020
-\end{itemize}
-
+\cvheader
+\input{cv/summary.tex}
+\input{cv/skills.tex}
+\input{cv/experience.tex}
+\input{cv/education.tex}
+\input{cv/certificates.tex}
 \end{document}

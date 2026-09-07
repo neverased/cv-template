@@ -1,0 +1,20 @@
+% The main CV has a portrait; text-only profiles use the shared header.
+\usepackage{graphicx}
+\graphicspath{{examples/}{./}}
+\renewcommand{\cvheader}{%
+  \begin{minipage}[c]{\dimexpr\linewidth-3.1cm\relax}
+    {\fontsize{25}{29}\selectfont\bfseries\cvName\par}
+    \vspace{3pt}
+    {\fontsize{13}{16}\selectfont\color{cvaccent}\cvHeadline\par}
+    \vspace{5pt}
+    {\fontsize{10}{13}\selectfont
+      Wrocław, Poland | +48 694 913 653 |\par
+      \href{mailto:mail@wojciechbajer.com}{mail@wojciechbajer.com}\par
+      \href{https://www.linkedin.com/in/wojciech-bajer}{linkedin.com/in/wojciech-bajer} |
+      \href{https://github.com/neverased}{github.com/neverased}\par
+      \textbf{Languages:} \spokenLanguages\par}
+  \end{minipage}\hfill
+  \begin{minipage}[c]{2.7cm}
+    \includegraphics[width=\linewidth]{profile-wb.png}
+  \end{minipage}\par
+}

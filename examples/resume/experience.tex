@@ -1,66 +1,22 @@
-%-------------------------------------------------------------------------------
-%	SECTION TITLE
-%-------------------------------------------------------------------------------
-\cvsection{Work Experience}
-
-
-%-------------------------------------------------------------------------------
-%	CONTENT
-%-------------------------------------------------------------------------------
-\begin{cventries}
-
-%---------------------------------------------------------
-  \cventry
-    {Quality Assurance Team Lead}
-    {Efectivo, Humanit Group}
-    {Wrocław, Poland}
-    {Feb. 2025 - Present}
-    {
-      \begin{cvitems}
-        \item {Owned and expanded dozens of E2E and API scenarios across a 6-8-layer product ecosystem, deepening regression coverage for release-critical flows.}
-        \item {Reduced regression and release validation by more than 1 day and cut manual verification effort by 30\%+ through automation-first release checks.}
-        \item {Improved backend test coverage, CI/CD feedback, and release tooling to support several releases per month while also supporting a 5-person QA team.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {QA and Automation Specialist}
-    {Efectivo, Humanit Group}
-    {Wrocław, Poland}
-    {May 2024 - Feb 2025}
-    {
-      \begin{cvitems}
-        \item {Built end-to-end automation from scratch for product and ecosystem workflows across web, backend, and cross-system release paths.}
-        \item {Added verification scripts for Hardware-in-the-Loop testing and release validation to replace manual-heavy checks with repeatable automation.}
-        \item {Prioritized automation coverage with engineering teams for the highest-risk release paths and regression gaps.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {DevOps Engineer (Consultant via HiQ)}
-    {Volvo Cars / Polestar}
-    {Gothenburg, Sweden}
-    {Jan 2022 - Mar 2024}
-    {
-      \begin{cvitems}
-        \item {Built CI/CD workflows, release tooling, and delivery automation used to improve integration feedback and reporting across engineering teams.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {QA Engineer / QA Lead - Consumer Entertainment Technology}
-    {Dolby Laboratories}
-    {Wrocław, Poland}
-    {Oct 2018 - Dec 2021}
-    {
-      \begin{cvitems}
-        \item {Built earlier QA depth across interoperability, device-ecosystem, and release-focused testing for consumer entertainment products.}
-        \item {Owned test design, metrics, and tooling, including dashboards used for stakeholder-facing release reporting.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-\end{cventries}
+\cvsection{Professional Experience}
+\efectivoLead{
+  \item Expand E2E and API regression coverage across backend, web, mobile, customer-hosted services and infrastructure workflows.
+  \item \releaseImpact
+  \item Improve backend test coverage, CI/CD feedback and release reporting with Grafana, Datadog, ReportPortal and internal tooling.
+  \item Lead a \qaTeamSize-person QA team and own test strategy, release readiness and quality metrics.
+  \item Design LLM-assisted workflows for testing tasks, product documentation and internal knowledge access.
+}
+\efectivoAutomation{
+  \item Built end-to-end automation from scratch across web, backend and cross-system release paths.
+  \item Created HIL verification scripts and API checks to replace manual-heavy validation with repeatable tests.
+  \item Prioritized automation coverage with engineering teams around release-critical workflows and regression gaps.
+}
+\cvcontinuation
+\cvsection{Professional Experience (continued)}
+\input{shared/earlier-experience.tex}
+\cvsection{Additional Experience}
+\lexenseRole{
+  \item Built backend services and delivery infrastructure for an AI legal platform using Node.js / NestJS, MongoDB, Redis, Qdrant and OCR.
+  \item Owned self-hosted operations, observability, CI/CD and secure deployment across the product.
+}
+\input{shared/consulting.tex}

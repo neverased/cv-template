@@ -1,0 +1,64 @@
+% Shared, single-column layout for both application profiles.
+\usepackage[a4paper,left=1.6cm,right=1.6cm,top=1.4cm,bottom=1.5cm]{geometry}
+\usepackage{fontspec}
+\usepackage[english]{babel}
+\usepackage{enumitem}
+\usepackage{needspace}
+\usepackage{xcolor}
+\usepackage[hidelinks,unicode]{hyperref}
+
+% Use distribution fonts, not machine-specific Roboto / Source Sans variants.
+% Visible word spacing avoids merged words in geometric text extractors.
+% Disabling kerning prevents pypdf from inserting spaces in TypeScript/TestRail.
+\setmainfont{texgyreheros}[Extension=.otf,UprightFont=*-regular,
+  BoldFont=*-bold,ItalicFont=*-italic,BoldItalicFont=*-bolditalic,
+  Ligatures=NoCommon,Kerning=Off,WordSpace={1.25,0,0}]
+\definecolor{cvink}{HTML}{20252B}
+\definecolor{cvmuted}{HTML}{46515D}
+\ifcvplain
+  \definecolor{cvaccent}{HTML}{20252B}
+\else
+  \definecolor{cvaccent}{HTML}{245566}
+\fi
+\color{cvink}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+\setlength{\emergencystretch}{2em}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\clubpenalty=10000
+\widowpenalty=10000
+\raggedright
+\pagestyle{empty}
+\urlstyle{same}
+\setlist[itemize]{leftmargin=1.2em,label=\textbullet,topsep=3pt,
+  itemsep=3pt,parsep=0pt,partopsep=0pt}
+
+\newcommand{\cvsection}[1]{%
+  \par\Needspace{4\baselineskip}\vspace{8pt}%
+  {\fontsize{13}{16}\selectfont\bfseries\color{cvaccent}#1\par}%
+  \vspace{2pt}{\color{cvaccent}\hrule}\vspace{5pt}%
+}
+\newcommand{\cvskill}[2]{\textbf{#1:} #2\par}
+\newcommand{\experienceentry}[5]{%
+  \par\Needspace{6\baselineskip}%
+  {\bfseries #1}\par\nopagebreak
+  {\fontsize{10}{12}\selectfont\color{cvmuted}#2 | #3 | #4}\par\nopagebreak
+  \begin{itemize}#5\end{itemize}\vspace{3pt}%
+}
+\newcommand{\cvheader}{%
+  {\fontsize{25}{29}\selectfont\bfseries\cvName\par}
+  \vspace{3pt}
+  {\fontsize{13}{16}\selectfont\color{cvaccent}\cvHeadline\par}
+  \vspace{5pt}
+  {\fontsize{10}{13}\selectfont
+    Wrocław, Poland | +48 694 913 653 |
+    \href{mailto:mail@wojciechbajer.com}{mail@wojciechbajer.com}\par
+    \href{https://www.linkedin.com/in/wojciech-bajer}{linkedin.com/in/wojciech-bajer} |
+    \href{https://github.com/neverased}{github.com/neverased}\par
+    \textbf{Languages:} \spokenLanguages\par}
+}
+\newcommand{\cvcontinuation}{%
+  \newpage
+  {\fontsize{10}{12}\selectfont\color{cvmuted}\cvName\ | \cvProfile\ | Page 2}\par
+}
