@@ -11,7 +11,10 @@ jobs:
 
     steps:
     - name: Checkout repo
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
+
+    - name: Update TeX Live packages
+      run: tlmgr update --self --all
 
     - name: Install fonts
       run: |
@@ -22,7 +25,7 @@ jobs:
           ;
 
     - name: Compile
-      run: make
+      run: make CC='lualatex -interaction=nonstopmode -halt-on-error'
 
     - uses: actions/upload-artifact@v7
       with:

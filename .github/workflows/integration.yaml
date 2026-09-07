@@ -3,7 +3,7 @@ name: Integration
 on:
   push:
     branches:
-    - master
+    - main
   pull_request: {}
 
 concurrency:
@@ -15,12 +15,11 @@ jobs:
     runs-on: ubuntu-latest
 
     outputs:
-      yaml_changed: ${{ steps.filter-yaml.outputs.changed }}
-      yaml_files: ${{ steps.filter-yaml.outputs.files }}
+      yaml_changed: ${{ steps.changed-files.outputs.yaml }}
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
       with:
         fetch-depth: 0
 
@@ -34,13 +33,6 @@ jobs:
           - '**/*.yaml'
           - '**/*.yml'
 
-    - name: Filter changed YAML files to outputs
-      id: filter-yaml
-      run: |
-        echo ::set-output name=changed::${{ steps.changed-files.outputs.yaml }}
-        echo ::set-output name=files::${{ steps.changed-files.outputs.yaml_files }}
-
-
   yaml:
     needs:
     - changed
@@ -49,7 +41,7 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
 
     - name: Lint YAML Files
       id: yaml-lint
