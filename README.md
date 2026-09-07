@@ -16,7 +16,26 @@
 
 **Awesome CV** is LaTeX template for a **CV(Curriculum Vitae)**, **Résumé** or **Cover Letter** inspired by [Fancy CV](https://www.sharelatex.com/templates/cv-or-resume/fancy-cv). It is easy to customize your own template, especially since it is really written by a clean, semantic markup.
 
-## Preview
+## Personal CVs
+
+The application profiles are **QA Lead / Test Manager** and **Senior QA Automation Engineer**. All four PDFs have two pages and a single text column. The main QA Lead CV includes a portrait and expanded Lexense AI engineering and verification experience; its plain ATS version remains more concise. The two automation versions have identical content. All use distribution-provided TeX Gyre Heros fonts and a shared base layout. The Awesome CV class is still used by the cover letters.
+
+Build and refresh the four PDFs in `examples/`, then copy clearly named application files to `output/pdf/`:
+
+```bash
+make application-pdfs CC='lualatex -interaction=nonstopmode -halt-on-error'
+```
+
+| Profile | Main entry point | Plain entry point | Shared content |
+| --- | --- | --- | --- |
+| QA Lead / Test Manager | `examples/cv.tex` (photo and AI focus) | `examples/cv-ats.tex` | `examples/cv/` |
+| QA Automation | `examples/resume.tex` | `examples/cv-ats-qa-automation.tex` | `examples/resume/` |
+
+Base contact details and typography are in `examples/shared/layout.tex`; the main CV overrides the header in `examples/cv/photo-header.tex` using `examples/profile-wb.png`. Names, role titles, dates, languages and the release improvement statement are in `examples/shared/profile.tex`. The main CV uses `summary-ai.tex`, `skills-ai.tex` and `experience-ai.tex` in `examples/cv/`, with compact earlier experience and education. Other versions use the original profile sections and shared earlier experience, education and certifications.
+
+Edit shared facts rather than copying them into the entry points. Historical role titles and dates must remain accurate when tailoring the headline. See `docs/cv-revision-2026-09-07.md` for the initial audit corrections and `docs/cv-ai-update-2026-09-07.md` for the subsequent main-CV expansion and verification.
+
+## Upstream template preview
 
 #### Résumé
 
