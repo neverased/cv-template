@@ -38,8 +38,16 @@ You can see [PDF](https://raw.githubusercontent.com/posquit0/Awesome-CV/master/e
 
 #### Requirements
 
-A full TeX distribution is assumed.  [Various distributions for different operating systems (Windows, Mac, \*nix) are available](http://tex.stackexchange.com/q/55437) but TeX Live is recommended.
-You can [install TeX from upstream](https://tex.stackexchange.com/q/1092) (recommended; most up-to-date) or use `sudo apt-get install texlive-full` if you really want that.  (It's generally a few years behind.)
+A current TeX Live 2026 distribution with LuaLaTeX is recommended. The template uses [Font Awesome 7](https://ctan.org/pkg/fontawesome7), version 7.3.1-1 (2026-08-09) or newer. For an upstream TeX Live or MacTeX installation, update the package manager and packages before building:
+
+```bash
+tlmgr update --self --all
+tlmgr install fontawesome7
+```
+
+For a package-manager-owned TeX installation (for example Homebrew), use that package manager to update TeX Live, or use the Docker command below. The CI build updates all TeX packages before compiling.
+
+Roboto and Source Sans 3 are optional system fonts; the class falls back to TeX Gyre Heros when they are unavailable. The Python cover letter generator uses only the standard library and has no third-party Python packages to update.
 
 If you don't want to install the dependencies on your system, this can also be obtained via [Docker](https://docker.com).
 
@@ -48,16 +56,17 @@ If you don't want to install the dependencies on your system, this can also be o
 At a command prompt, run
 
 ```bash
-xelatex {your-cv}.tex
+make CC='lualatex -interaction=nonstopmode -halt-on-error'
 ```
 
 Or using docker:
 
 ```bash
-docker run --rm --user $(id -u):$(id -g) -i -w "/doc" -v "$PWD":/doc texlive/texlive:latest make
+docker run --rm --pull=always -i -w /doc -v "$PWD":/doc texlive/texlive:latest \
+  sh -ec 'tlmgr update --self --all; make CC="lualatex -interaction=nonstopmode -halt-on-error"'
 ```
 
-In either case, this should result in the creation of ``{your-cv}.pdf``
+Both commands compile all eight variants into `examples/*.pdf`.
 
 ## Tailored Cover Letter Generator
 
@@ -104,7 +113,7 @@ By default the script writes:
 
 [**LaTeX**](https://www.latex-project.org) is a fantastic typesetting program that a lot of people use these days, especially the math and computer science people in academia.
 
-[**FontAwesome6 LaTeX Package**](https://github.com/braniii/fontawesome) is a LaTeX package that provides access to the [Font Awesome 6](https://fontawesome.com/v6/icons) icon set.
+[**FontAwesome7 LaTeX Package**](https://github.com/braniii/fontawesome) is a LaTeX package that provides access to the [Font Awesome 7](https://fontawesome.com/icons) icon set.
 
 [**Roboto**](https://github.com/google/roboto) is the default font on Android and ChromeOS, and the recommended font for Google’s visual language, Material Design.
 
