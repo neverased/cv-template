@@ -46,17 +46,22 @@
   {\fontsize{10}{12}\selectfont\color{cvmuted}#2 | #3 | #4}\par\nopagebreak
   \begin{itemize}#5\end{itemize}\vspace{3pt}%
 }
+% Keep the email on its own line. Labels separate addresses even when a PDF
+% text extractor drops paragraph whitespace between the contact rows.
+\newcommand{\cvcontactdetails}{%
+  {\fontsize{10}{13}\selectfont
+    Wrocław, Poland | +48 694 913 653\par
+    \textbf{Email:} \href{mailto:mail@wojciechbajer.com}{mail@wojciechbajer.com}\par
+    \textbf{LinkedIn:} \href{https://www.linkedin.com/in/wojciech-bajer}{linkedin.com/in/wojciech-bajer} |
+    \textbf{GitHub:} \href{https://github.com/neverased}{github.com/neverased}\par
+    \textbf{Languages:} \spokenLanguages\par}
+}
 \newcommand{\cvheader}{%
   {\fontsize{25}{29}\selectfont\bfseries\cvName\par}
   \vspace{3pt}
   {\fontsize{13}{16}\selectfont\color{cvaccent}\cvHeadline\par}
   \vspace{5pt}
-  {\fontsize{10}{13}\selectfont
-    Wrocław, Poland | +48 694 913 653 |
-    \href{mailto:mail@wojciechbajer.com}{mail@wojciechbajer.com}\par
-    \href{https://www.linkedin.com/in/wojciech-bajer}{linkedin.com/in/wojciech-bajer} |
-    \href{https://github.com/neverased}{github.com/neverased}\par
-    \textbf{Languages:} \spokenLanguages\par}
+  \cvcontactdetails
 }
 \newcommand{\cvcontinuation}{%
   \newpage
